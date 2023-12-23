@@ -26,7 +26,7 @@ export default function Home() {
         const now = new Date();
 
         // 目標の日付と時間を設定
-        const targetTime = new Date("2023-12-23T06:00:00+09:00");
+        const targetTime = new Date("2023-12-25T06:00:00+09:00");
 
         let timeDiff = targetTime.getTime() - now.getTime();
         let isCountdownOver = false;
