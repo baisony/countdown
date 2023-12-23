@@ -26,7 +26,7 @@ export default function Home() {
         const now = new Date();
 
         // 目標の日付と時間を設定
-        const targetTime = new Date("2023-12-25T06:00:00+09:00");
+        const targetTime = new Date("2023-12-23T06:00:00+09:00");
 
         let timeDiff = targetTime.getTime() - now.getTime();
         let isCountdownOver = false;
@@ -70,7 +70,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center flex-col text-black">
                 <p className="font-bold text-[4vw] mb-[1vw] bg-gray-500 bg-opacity-10 pl-[4vw] pr-[4vw]">
                     {countdown.isCountdownOver ? (
-                        <a href={"https://ucho-ten.net/"} target={"_blank"}>Access Ucho-ten</a>
+                        <a href={"https://ucho-ten.net/"} target={"_blank"}>{'>'} Access Ucho-ten</a>
                     ) : (
                         `Ucho-ten`
                     )}
